@@ -1,0 +1,35 @@
+body{
+    font-size: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+.se{
+    text-align: center;
+}
+
+.text{
+    width: 600px;
+    height: 65px;
+    font-size: 40px;
+}
+
+.box{
+    width: 100px;
+    height: 65px;
+    font-size: 40px;
+}
+
+.size{
+    width: 4em;
+    height: 4em;
+}
+
+.button{
+    width: 280px;
+    height: 70px;
+    font-size: 35px;
+    margin: 40px 10px;
+}
