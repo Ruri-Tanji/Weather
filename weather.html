@@ -6,7 +6,7 @@
     <title>天気予報サイト</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script rel="stylesheet" src="js/weather.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/weather1.css">
+    <link rel="stylesheet" type="text/css" href="css/weather2.css">
 </head>
 
 <body>
@@ -32,112 +32,120 @@
         <button onclick="today()" id="today"></button>
         <button onclick="tomorrow()" id="tomorrow"></button>
     </div>
-    <h1 id="weather1"></h1>
-    <div class="temperature">
-        <h1 id="temp1"></h1>
-        <h2 id="temp2"></h2>
+    <div class="content">
+        <h1 id="weather1"></h1>
+        <div class="temperature">
+            <h1 id="temp1"></h1>
+            <h2 id="temp2"></h2>
+        </div>
+        <div class="wrapper grid">
+            <div class="item">
+                <div class="wash">
+                    <h3>洗濯</h3>
+                    <h1 id="wash"></h1>
+                    <h3 id="wash_text"></h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="uv">
+                    <h3>紫外線</h3>
+                    <img id="uv" src="img/uv4.png" width="150" height="150">
+                    <h3 id="uv_text">強い</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pollen">
+                    <h3>花粉</h3>
+                    <img id="pollen" src="img/pollen1.png" width="150" height="150">
+                    <h3 id="pollen_text">少ない</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="today_weather">
+            <h1>3時間ごと</h1>
+            <div id="ta">
+                <table border="1" cellpadding="5" cellspacing="0" class="table" width="90%">
+                    <tbody>
+                        <tr>
+                            <td width="100">時刻</td>
+                            <td id="t0"></td>
+                            <td id="t1"></td>
+                            <td id="t2"></td>
+                            <td id="t3"></td>
+                            <td id="t4"></td>
+                            <td id="t5"></td>
+                            <td id="t6"></td>
+                            <td id="t7"></td>
+                        </tr>
+
+                        <tr>
+                            <td><small>天気</small></td>
+                            <td id="w0"></td>
+                            <td id="w1"></td>
+                            <td id="w2"></td>
+                            <td id="w3"></td>
+                            <td id="w4"></td>
+                            <td id="w5"></td>
+                            <td id="w6"></td>
+                            <td id="w7"></td>
+
+
+                        </tr>
+
+                        <tr>
+                            <td>気温（℃）</td>
+                            <td id="mp0"></td>
+                            <td id="mp1"></td>
+                            <td id="mp2"></td>
+                            <td id="mp3"></td>
+                            <td id="mp4"></td>
+                            <td id="mp5"></td>
+                            <td id="mp6"></td>
+                            <td id="mp7"></td>
+
+                        </tr>
+
+                        <tr>
+                            <td>湿度（％）</td>
+                            <td id="h0"></td>
+                            <td id="h1"></td>
+                            <td id="h2"></td>
+                            <td id="h3"></td>
+                            <td id="h4"></td>
+                            <td id="h5"></td>
+                            <td id="h6"></td>
+                            <td id="h7"></td>
+                        </tr>
+
+                        <tr>
+                            <td>風向</td>
+                            <td id="wd0"></td>
+                            <td id="wd1"></td>
+                            <td id="wd2"></td>
+                            <td id="wd3"></td>
+                            <td id="wd4"></td>
+                            <td id="wd5"></td>
+                            <td id="wd6"></td>
+                            <td id="wd7"></td>
+                        </tr>
+
+                        <tr>
+                            <td>風速(m/s)</td>
+                            <td id="ws0"></td>
+                            <td id="ws1"></td>
+                            <td id="ws2"></td>
+                            <td id="ws3"></td>
+                            <td id="ws4"></td>
+                            <td id="ws5"></td>
+                            <td id="ws6"></td>
+                            <td id="ws7"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <div class="wash">
-        <h3>洗濯</h3>
-        <h1 id="wash" ></h1>
-        <h3 id="wash_text"></h3>
-    </div>
-    <div class="uv">
-        <h3>紫外線</h3>
-        <img id="uv" src="uv4.png" width="150" height="150">
-        <h3 id="uv_text">強い</h3>
-    </div>
-    <div class="pollen">
-        <h3>花粉</h3>
-        <img id="pollen" src="pollen1.png" width="150" height="150">
-        <h3 id="pollen_text">少ない</h3>
-    </div>
-
-    <div class="today_weather">
-        <h1>3時間ごと</h1>
-
-        <table border="1" cellpadding="5" cellspacing="0" class="table" width="100%">
-            <tbody>
-                <tr>
-                    <td width="100">時刻</td>
-                    <td id="t0"></td>
-                    <td id="t1"></td>
-                    <td id="t2"></td>
-                    <td id="t3"></td>
-                    <td id="t4"></td>
-                    <td id="t5"></td>
-                    <td id="t6"></td>
-                    <td id="t7"></td>
-                </tr>
-
-                <tr>
-                    <td><small>天気</small></td>
-                    <td id="w0"></td>
-                    <td id="w1"></td>
-                    <td id="w2"></td>
-                    <td id="w3"></td>
-                    <td id="w4"></td>
-                    <td id="w5"></td>
-                    <td id="w6"></td>
-                    <td id="w7"></td>
-
-
-                </tr>
-
-                <tr>
-                    <td>気温（℃）</td>
-                    <td id="mp0"></td>
-                    <td id="mp1"></td>
-                    <td id="mp2"></td>
-                    <td id="mp3"></td>
-                    <td id="mp4"></td>
-                    <td id="mp5"></td>
-                    <td id="mp6"></td>
-                    <td id="mp7"></td>
-
-                </tr>
-
-                <tr>
-                    <td>湿度（％）</td>
-                    <td id="h0"></td>
-                    <td id="h1"></td>
-                    <td id="h2"></td>
-                    <td id="h3"></td>
-                    <td id="h4"></td>
-                    <td id="h5"></td>
-                    <td id="h6"></td>
-                    <td id="h7"></td>
-                </tr>
-
-                <tr>
-                    <td>風向</td>
-                    <td id="wd0"></td>
-                    <td id="wd1"></td>
-                    <td id="wd2"></td>
-                    <td id="wd3"></td>
-                    <td id="wd4"></td>
-                    <td id="wd5"></td>
-                    <td id="wd6"></td>
-                    <td id="wd7"></td>
-                </tr>
-
-                <tr>
-                    <td>風速(m/s)</td>
-                    <td id="ws0"></td>
-                    <td id="ws1"></td>
-                    <td id="ws2"></td>
-                    <td id="ws3"></td>
-                    <td id="ws4"></td>
-                    <td id="ws5"></td>
-                    <td id="ws6"></td>
-                    <td id="ws7"></td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-    
 </body>
 
 </html>

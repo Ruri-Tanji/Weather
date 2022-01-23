@@ -41,12 +41,12 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="250" height="250" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="250" height="250"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="250" height="250"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="250" height="250"/>';
-        else if (weather == "Thunder") htmltext += '<img src="thunder.png" width="250" height="250"/>';
-        else htmltext += '<img src="cloudy.png" width="250" height="250"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="250" height="250" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="250" height="250"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="250" height="250"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="250" height="250"/>';
+        else if (weather == "Thunder") htmltext += '<img src="img/thunder.png" width="250" height="250"/>';
+        else htmltext += '<img src="img/cloudy.png" width="250" height="250"/>';
         document.getElementById("weather1").innerHTML = htmltext;
     }
 });
@@ -69,11 +69,11 @@ $.ajax({
     success: function(data) {
         let htmltext = ""; 
         let humidity = data.main.humidity;
-        if (humidity <= 55 ) htmltext += '<img src="wash5.png" width="150" height="150" />';
-        else if (55 <= humidity && humidity <= 65) htmltext += '<img src="wash4.png" width="150" height="150" />';
-        else if (65<= humidity && humidity <= 75) htmltext += '<img src="wash3.png" width="150" height="150" />';
-        else if (75 <= humidity && humidity <= 85) htmltext += '<img src="wash2.png" width="150" height="150" />';
-        else if (85 <= humidity) htmltext += '<img src="wash1.png" width="150" height="150" />';
+        if (humidity <= 55 ) htmltext += '<img src="img/wash5.png" width="150" height="150" />';
+        else if (55 <= humidity && humidity <= 65) htmltext += '<img src="img/wash4.png" width="150" height="150" />';
+        else if (65<= humidity && humidity <= 75) htmltext += '<img src="img/wash3.png" width="150" height="150" />';
+        else if (75 <= humidity && humidity <= 85) htmltext += '<img src="img/wash2.png" width="150" height="150" />';
+        else if (85 <= humidity) htmltext += '<img src="img/wash1.png" width="150" height="150" />';
         document.getElementById("wash").innerHTML = htmltext;
     }
 });
@@ -111,12 +111,12 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="250" height="250" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="250" height="250"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="250" height="250"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="250" height="250"/>';
-        else if (weather == "Thunder") htmltext += '<img src="thunder.png" width="250" height="250"/>';
-        else htmltext += '<img src="cloudy.png" width="250" height="250"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="250" height="250" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="250" height="250"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="250" height="250"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="250" height="250"/>';
+        else if (weather == "Thunder") htmltext += '<img src="img/thunder.png" width="250" height="250"/>';
+        else htmltext += '<img src="img/cloudy.png" width="250" height="250"/>';
         document.getElementById("weather1").innerHTML = htmltext;
     }
 });
@@ -150,11 +150,11 @@ $.ajax({
     success: function(data) {
         let htmltext = ""; 
         let humidity = data.main.humidity;
-        if (humidity <= 55 ) htmltext += '<img src="wash5.png" width="150" height="150" />';
-        else if (55 <= humidity && humidity <= 65) htmltext += '<img src="wash4.png" width="150" height="150" />';
-        else if (65<= humidity && humidity <= 75) htmltext += '<img src="wash3.png" width="150" height="150" />';
-        else if (75 <= humidity && humidity <= 85) htmltext += '<img src="wash2.png" width="150" height="150" />';
-        else if (85 <= humidity) htmltext += '<img src="wash1.png" width="150" height="150" />';
+        if (humidity <= 55 ) htmltext += '<img src="img/wash5.png" width="150" height="150" />';
+        else if (55 <= humidity && humidity <= 65) htmltext += '<img src="img/wash4.png" width="150" height="150" />';
+        else if (65<= humidity && humidity <= 75) htmltext += '<img src="img/wash3.png" width="150" height="150" />';
+        else if (75 <= humidity && humidity <= 85) htmltext += '<img src="img/wash2.png" width="150" height="150" />';
+        else if (85 <= humidity) htmltext += '<img src="img/wash1.png" width="150" height="150" />';
         document.getElementById("wash").innerHTML = htmltext;
     }
 });
@@ -165,11 +165,11 @@ $.ajax({
     success: function(data) {
         let htmltext = ""; 
         let humidity = data.main.humidity;
-        if (humidity <= 55 ) htmltext += '<img src="wash1.png" width="150" height="150" />';
-        else if (55 <= humidity && humidity <= 65) htmltext += '<img src="wash2.png" width="150" height="150" />';
-        else if (65<= humidity && humidity <= 75) htmltext += '<img src="wash3.png" width="150" height="150" />';
-        else if (75 <= humidity && humidity <= 85) htmltext += '<img src="wash4.png" width="150" height="150" />';
-        else if (85 <= humidity) htmltext += '<img src="wash5.png" width="150" height="150" />';
+        if (humidity <= 55 ) htmltext += '<img src="img/wash1.png" width="150" height="150" />';
+        else if (55 <= humidity && humidity <= 65) htmltext += '<img src="img/wash2.png" width="150" height="150" />';
+        else if (65<= humidity && humidity <= 75) htmltext += '<img src="img/wash3.png" width="150" height="150" />';
+        else if (75 <= humidity && humidity <= 85) htmltext += '<img src="img/wash4.png" width="150" height="150" />';
+        else if (85 <= humidity) htmltext += '<img src="img/wash5.png" width="150" height="150" />';
         document.getElementById("wash").innerHTML = htmltext;
     }
 });
@@ -198,12 +198,12 @@ function tomorrow(){
         success: function(data) {
             let htmltext = "";  
             let weather = data.list[23].weather[0].main; 
-            if (weather == "Sunny") htmltext += '<img src="sunny.png" width="250" height="250" />';
-            else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="250" height="250"/>';
-            else if (weather == "Rain") htmltext += '<img src="rainy.png" width="250" height="250"/>';
-            else if (weather == "Snow") htmltext += '<img src="snow.png" width="250" height="250"/>';
-            else if (weather == "Thunder") htmltext += '<img src="thunder.png" width="250" height="250"/>';
-            else htmltext += '<img src="cloudy.png" width="250" height="250"/>';
+            if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="250" height="250" />';
+            else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="250" height="250"/>';
+            else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="250" height="250"/>';
+            else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="250" height="250"/>';
+            else if (weather == "Thunder") htmltext += '<img src="img/thunder.png" width="250" height="250"/>';
+            else htmltext += '<img src="img/cloudy.png" width="250" height="250"/>';
             document.getElementById("weather1").innerHTML = htmltext;
         }
     });
@@ -236,11 +236,11 @@ function tomorrow(){
         success: function(data) {
             let htmltext = "";  
             let humidity= data.list[23].main.humidity; 
-            if (humidity <= 55 ) htmltext += '<img src="wash5.png" width="150" height="150" />';
-            else if (55 <= humidity && humidity <= 65) htmltext += '<img src="wash4.png" width="150" height="150" />';
-            else if (65<= humidity && humidity <= 75) htmltext += '<img src="wash3.png" width="150" height="150" />';
-            else if (75 <= humidity && humidity <= 85) htmltext += '<img src="wash2.png" width="150" height="150" />';
-            else if (85 <= humidity) htmltext += '<img src="wash1.png" width="150" height="150" />';
+            if (humidity <= 55 ) htmltext += '<img src="img/wash5.png" width="150" height="150" />';
+            else if (55 <= humidity && humidity <= 65) htmltext += '<img src="img/wash4.png" width="150" height="150" />';
+            else if (65<= humidity && humidity <= 75) htmltext += '<img src="img/wash3.png" width="150" height="150" />';
+            else if (75 <= humidity && humidity <= 85) htmltext += '<img src="img/wash2.png" width="150" height="150" />';
+            else if (85 <= humidity) htmltext += '<img src="img/wash1.png" width="150" height="150" />';
             document.getElementById("wash").innerHTML = htmltext;
         }
     });
@@ -281,11 +281,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[0].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w0").innerHTML = htmltext;
     }
 });
@@ -361,11 +361,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[1].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w1").innerHTML = htmltext;
     }
 });
@@ -441,11 +441,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[2].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w2").innerHTML = htmltext;
     }
 });
@@ -521,11 +521,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[3].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w3").innerHTML = htmltext;
     }
 });
@@ -600,11 +600,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[4].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w4").innerHTML = htmltext;
     }
 });
@@ -680,11 +680,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[5].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w5").innerHTML = htmltext;
     }
 });
@@ -760,11 +760,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[6].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w6").innerHTML = htmltext;
     }
 });
@@ -840,11 +840,11 @@ $.ajax({
     success: function(data) {
         let htmltext = "";  
         let weather = data.list[7].weather[0].main; 
-        if (weather == "Sunny") htmltext += '<img src="sunny.png" width="40" height="40" />';
-        else if (weather == "Cloudy") htmltext += '<img src="cloudy.png" width="40" height="40"/>';
-        else if (weather == "Rain") htmltext += '<img src="rainy.png" width="40" height="40"/>';
-        else if (weather == "Snow") htmltext += '<img src="snow.png" width="40" height="40"/>';
-        else htmltext += '<img src="cloudy.png" width="40" height="40"/>';
+        if (weather == "Sunny") htmltext += '<img src="img/sunny.png" width="40" height="40" />';
+        else if (weather == "Cloudy") htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
+        else if (weather == "Rain") htmltext += '<img src="img/rainy.png" width="40" height="40"/>';
+        else if (weather == "Snow") htmltext += '<img src="img/snow.png" width="40" height="40"/>';
+        else htmltext += '<img src="img/cloudy.png" width="40" height="40"/>';
         document.getElementById("w7").innerHTML = htmltext;
     }
 });

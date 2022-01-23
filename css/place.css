@@ -1,5 +1,5 @@
 body{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 h1{
@@ -23,8 +23,8 @@ h1{
 }
 
 .size{
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
 }
 
 .button{
@@ -32,4 +32,10 @@ h1{
     height: 70px;
     font-size: 35px;
     margin: 40px 10px;
+}
+
+.re {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
 }
